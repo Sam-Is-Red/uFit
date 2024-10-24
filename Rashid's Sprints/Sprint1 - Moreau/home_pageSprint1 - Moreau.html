@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UFIT Home Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #2bca92;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+        }
+        .feed {
+            flex: 2;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-right: 20px;
+        }
+        .feed h2 {
+            margin-bottom: 20px;
+        }
+        .post {
+            padding: 15px;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .events {
+            flex: 1;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .events h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .day {
+            background-color: #f1f1f1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .day h3 {
+            margin: 0;
+        }
+        /* Responsive layout for mobile */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .feed, .events {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Welcome to UFIT
+    </header>
+
+    <div class="container">
+        <!-- Feed Section -->
+        <div class="feed">
+            <h2>Your Feed</h2>
+            <div class="post">
+                <h3>@user_profile</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultricies neque non velit interdum pulvinar quis id orci. Ut lacus ex, malesuada sit amet sem eu, ultricies ultricies turpis. Vestibulum at lorem vestibulum, placerat metus placerat, suscipit lectus. Nunc eget magna nec ipsum interdum suscipit ac ac lorem. Donec in est ornare, 
+                    condimentum enim quis, mollis lacus. Quisque ut malesuada tortor, eu fermentum quam. Etiam egestas dictum ornare. Pellentesque molestie interdum tellus a porttitor.</p>
+            </div>
+            <div class="post">
+                <h3>@user_profile</h3>
+                <p>Quisque efficitur, metus ac hendrerit dapibus, ipsum enim vehicula ligula, vel volutpat lectus.</p>
+            </div>
+            <div class="post">
+                <h3>@user_profile</h3>
+                <p>Nullam ante erat, consectetur at egestas eget, aliquam non erat. Sed varius erat 
+                    sed neque efficitur auctor. Orci varius natoque penatibus et magnis dis parturient montes, 
+                    nascetur ridiculus mus. Donec lacus sapien, convallis et velit vel, facilisis pulvinar lacus. 
+                    Cras tellus massa, vehicula in diam quis, posuere maximus sapien. Curabitur sit amet ornare elit, 
+                    in vestibulum orci. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos 
+                    himenaeos. Pellentesque et ex hendrerit sem lacinia pretium. Vivamus imperdiet ex sed porta posuere. 
+                    Donec nec libero ac mauris condimentum fringilla. Sed ullamcorper sit amet nisi sed dictum. 
+                </p>
+            </div>
+            <!-- Add more posts as needed -->
+        </div>
+
+        <!-- Events Section -->
+        <div class="events">
+            <h2>Events</h2>
+            <div class="day">
+                <h3>Monday</h3>
+                <p>No events today.</p>
+            </div>
+            <div class="day">
+                <h3>Tuesday</h3>
+                <p>Yoga class at 6:00 PM.</p>
+            </div>
+            <div class="day">
+                <h3>Wednesday</h3>
+                <p>Group run at 7:00 AM.</p>
+            </div>
+            <div class="day">
+                <h3>Thursday</h3>
+                <p>Nutrition workshop at 12:00 PM.</p>
+            </div>
+            <div class="day">
+                <h3>Friday</h3>
+                <p>Lift workout at 5:00 PM.</p>
+            </div>
+            <div class="day">
+                <h3>Saturday</h3>
+                <p>Weekend hike at 8:00 AM.</p>
+            </div>
+            <div class="day">
+                <h3>Sunday</h3>
+                <p>Rest day - No events.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
