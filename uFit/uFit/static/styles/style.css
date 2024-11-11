@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* the nav bar */
+.uFit-nav {
+    font-size: 35px;
+    display: flex;
+    font-family: "Inter", sans-serif;
+}
+
+#uFit-logo {
+    letter-spacing: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgba(32, 201, 151, 1);
+    font-weight: bold;
+    font-style: italic;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    paint-order: stroke fill;
+}
+
+/* makes it so that the buttons doesn't look buttony??? */
+button {
+    all: unset;
+}
+
+button:focus {
+    outline: revert;
+}
+
+/*  sidebar-options styling */
+.sidebar-options {
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(235, 229, 252, 1);
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.sidebar-options span {
+    padding: 8px 8px 20px 32px;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    color: rgba(171, 181, 190, 1);
+    font-size: 16px;
+}
+
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.closebtn:hover {
+    color: rgba(32, 201, 151, 1);
+}
+
+.openbtn {
+    cursor: pointer;
+}
+
+/* profile dropdown styling*/
+.user-pic {
+    width: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.profile-options-wrap {
+    position: absolute;
+    right: -145px;
+    width: 400px;
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.6s;
+}
+
+.profile-options-wrap.open-options {
+    height: 800px;
+}
+
+.profile-options {
+    width: 200px;
+    background: rgba(235, 229, 252, 1);
+    padding: 20px;
+    margin: 10px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-info h3 {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.user-info img {
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+/* links styling and when hovered over */
+.options-links {
+    padding: 8px 8px 8px 40px;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: rgba(52, 58, 64, 1);
+    display: block;
+    transition: 0.3s;
+}
+
+.options-links:hover {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(32, 201, 151, 1);
+}
